@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1606554145768547561, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: animationSprites.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1606554145768547561, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: 'animationSprites.Array.data[0]'
@@ -27,10 +27,22 @@ PrefabInstance:
     - target: {fileID: 2450665918638356088, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: faa33742ca0e31347b439b55fb7cecfd, type: 3}
+      objectReference: {fileID: -5388541155013350144, guid: 7e5da314d71f27c42b41e084950a1a20, type: 3}
     - target: {fileID: 2450665918638356088, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223422190828989036, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223422190828989036, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223422190828989036, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4223422190828989036, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4223422190828989036, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4223422190828989036, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_LocalRotation.x
@@ -58,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4223422190828989036, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4223422190828989036, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -70,15 +82,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4223422190828989036, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 7618481797650809285, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_Size.x
-      value: 1.375
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 7618481797650809285, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_Size.y
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 7618481797650809285, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -98,11 +110,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7618481797650809285, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.375
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 7618481797650809285, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 7618481797650809285, guid: da4977ef965ea8d4da55a74fe45fa648, type: 3}
       propertyPath: m_SpriteTilingProperty.adaptiveTilingThreshold
