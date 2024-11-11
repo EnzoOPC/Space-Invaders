@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
 
     public bool laserActive;
 
+    public Vector3 laserSpawnPosition;
+
     private void Update() {
         if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)) {
             this.transform.position += Vector3.left * this.speed * Time.deltaTime;
@@ -23,7 +25,7 @@ public class Player : MonoBehaviour
     private void Shoot() {
 
         if (!laserActive) {
-            Projectile projectile = Instantiate(this.laserPrefab, this.transform.position, Quaternion.identity);
+            Projectile projectile = Instantiate(this.laserPrefab, this.transform.position + laserSpawnPosition, Quaternion.identity);
             projectile.destroyed += LaserDestroyed;
             laserActive = true;
         }
