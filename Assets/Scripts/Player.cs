@@ -81,6 +81,7 @@ public class Player : MonoBehaviour
             if (Lives <= 0) {
 
                 Destroy(gameObject);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
         }
