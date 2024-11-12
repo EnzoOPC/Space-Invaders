@@ -6,6 +6,8 @@ public class Player : MonoBehaviour
 {
     public float speed = 5;
 
+    private Vector2 movement;
+
     public Projectile laserPrefab;
 
     public bool laserActive;
@@ -18,16 +20,31 @@ public class Player : MonoBehaviour
 
     public GameObject explosionPrefab;
 
+    private Vector2 screenLimit;
+
+    private float playerHalfWidth;
+
+    private void Start() {
+
+        screenLimit = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
+        playerHalfWidth = GetComponent<SpriteRenderer>().bounds.extents.x;
+    }
+
     private void Update() {
-        if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow)) {
-            this.transform.position += Vector3.left * this.speed * Time.deltaTime;
-        }
-         else if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow)) {
-            this.transform.position += Vector3.right * this.speed * Time.deltaTime;
-        }
+
+        float input = Input.GetAxisRaw("Horizontal");
+        movement.x = input * speed * Time.deltaTime;
+        transform.Translate(Vector2.right * input * speed * Time.deltaTime);
+
+        float clampX = Mathf.Clamp(transform.position.x, -screenLimit.x + playerHalfWidth, screenLimit.x - playerHalfWidth);
+        Vector2 pos = transform.position;
+        pos.x = clampX;
+        transform.position = pos;
+
         if (Input.GetKeyDown("space") || Input.GetMouseButtonDown(0)) {
             Shoot();
         }
+        
     }
     private void Shoot() {
 
